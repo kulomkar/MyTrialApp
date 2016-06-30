@@ -1,0 +1,26 @@
+[{
+ "type": "text",
+ "value":"First",
+ "name": "first",
+ "required":"true"
+}, {
+ "type": "text",
+ "name": "second"
+ 
+}, {
+ "type": "checkbox",
+ "name": "third"
+},{
+"type":"button",
+"value":"First",
+"id":"first",
+"class":"btn-primary"
+},{
+"type":"button",
+"value":"Second",
+"id":"second",
+"class":"btn-danger"
+},{
+"display": "JavaScript Tutorial",
+"url": "http://www.w3schools.com/js/default.asp"
+}]

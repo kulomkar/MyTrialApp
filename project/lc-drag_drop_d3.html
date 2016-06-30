@@ -1,0 +1,31 @@
+<div class="span12">
+  <h1>Drag and Drop with Angular.JS</h1>
+</div>
+<div class="span12">
+  <p>Show Alternate:
+    <input type="checkbox" ng-model="checked">
+  </p>
+</div>
+<div class="span12">
+<div class="span4">
+  <h3>Below items are draggable:</h3>
+  <accordion ng-hide="checked">
+    <accordion-group draggable="true" ng-repeat="item in dragItems" id="{{item.itemId}}">
+      <accordion-heading>
+        {{ item.title }}
+      </accordion-heading>
+      {{ item.score }}
+    </accordion-group>
+  </accordion>
+  <accordion ng-show="checked">
+    <accordion-group draggable="true">
+      <accordion-heading>Show entire chart</accordion-heading </accordion-group>
+  </accordion>
+</div>
+<div class="span8">
+  <h3>Drop items to show D3 Chart</h3>
+  <div droppable="true" class="well well-large">
+    <d3-chart val="chartData"></d3-chart>
+  </div>
+</div>
+</div

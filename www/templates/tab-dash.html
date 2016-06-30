@@ -1,0 +1,36 @@
+
+
+<ion-view view-title="Dashboard" class="has-subheader">
+
+  <ion-content scroll="false">
+	 
+		<div class="row">
+				<div class="col col-60" style="min-height:240px;">
+					
+		<center><table >
+		<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+		</tr>
+		<tr ng-repeat="person in people">
+				<td>{{person.firstName}}</td>
+				<td>{{person.lastName}}</td>
+		</tr>
+	 
+</table></center>
+
+				
+				</div>
+				<div class="col col-40" style="border-radius: 20px; height:90%;
+    border: 2px solid #73AD21;">
+					
+						 <center> <a ng-click="loadPeople()" class="pointer">Table 1</a><br> 
+							    <a ng-click="loadPeople2()" class="pointer">Table 2</a> </center>
+								
+					
+				</div>
+		</div>
+	 
+  </ion-content>
+
+</ion-view>

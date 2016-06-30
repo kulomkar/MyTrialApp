@@ -1,0 +1,8 @@
+{"form":{
+     "template":[
+          {"type":"text","model":"title","label":"Title","required":true},
+          {"type":"textarea","model":"description","label":"Description","required":true},
+          {"type":"number","model":"price","label":"Price","required":true},
+          {"type":"choice","model":"available","label":"Available","required":true}],
+     "data":{"title":"xdfddf","description":"","price":"","available":"1"}}
+ }

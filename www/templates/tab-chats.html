@@ -1,0 +1,27 @@
+<ion-view view-title="Dashboard" class="has-subheader">
+  <ion-content scroll="false">
+    <div class="row" style="padding-left:55px;">
+        <div class="col col-60" style="border-radius: 20px; height:90%;border: 2px solid #73AD21;min-height:240px;">
+            <div class="form-group" ng-repeat="input in inputs" id="content">
+                <div ng-switch="input.type">
+                    <div  ng-switch-when="text" > 
+                        <label class="">{{input.name}}</label>
+                        <input  type="text" value="{{input.value}}"/>
+                    </div>
+                    <div ng-switch-when="checkbox">
+                        <input  type="checkbox" value="inputs[input.name]"/ >                              
+                    </div>
+                    <div ng-switch-when="button" class="btn-group inline pull-left">
+                        <input ID="{{input.id}}" type="submit" value="{{input.value}}" class="{{input.class}}">
+                    </div>
+                </div>
+            </div>    
+          
+        </div>
+        <div class="col col-40" style="border-radius: 20px; height:90%;border: 2px solid #73AD21;">
+            <a ng-click="loadPeople($event)" class="pointer" id="1">Link 1</a><br> 
+            <a ng-click="loadPeople($event)" class="pointer" id="2">Link 2</a>
+        </div>
+    </div>
+ </ion-content>
+</ion-view>

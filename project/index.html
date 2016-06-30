@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS prototype with HTML5 Drag and Drop, integrated with D3.JS</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://code.angularjs.org/1.2.2/angular.js"></script>
+    <script src="http://cdn.jsdelivr.net/restangular/latest/restangular.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.6.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+    <script src="lc-main-controller.js"></script>
+    <script src="lc-drag-directive.js"></script>
+    <script src="lc-drop-directive.js"></script>
+    <script src="lc-d3chart-directive.js"></script>
+    <script src="lc-d3-service.js"></script>
+    <script src="lc-localstore.js"></script>
+  </head>
+
+  <body ng-app="dndWithD3App">
+  <div class="span12" ng-hide="isOnline">
+            <p class="alert">
+                You are offline.
+            </p>
+        </div>
+    <div class="row" data-ng-view=""></div>
+  </body>
+
+</html>
